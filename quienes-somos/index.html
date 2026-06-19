@@ -43,11 +43,21 @@
                     <span>Favoritos</span>
                 </a>
 
-                <a href="../carrito/index.html" class="carrito">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span>Carrito</span>
-                    <span class="cuentaCarrito">0</span>
-                </a>
+                <div class="desplegableCarrito">
+                    <button class="carrito-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Carrito</span>
+                        <span class="cuentaCarrito">0</span>
+                    </button>
+
+                    <div class="carrito-dropdown">
+                        <h4>Tu carrito</h4>
+                        <div id="carrito-items"></div>
+                        <div class="carrito-total">
+                            <strong>Total:</strong> $<span id="carrito-total">0</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -246,6 +256,7 @@
             </div>
 
         </footer>
+        <script src="../js/carrito.js"></script>
 </body>
 
 </html>
