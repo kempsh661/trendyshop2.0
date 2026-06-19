@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+/*--------------------NavBar-----------------*/
+header{
+    background: #000000;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 60px;
+    gap: 100px;
+}
+
+.logo img{
+    margin-top: 20px;
+    height: 90px;
+}
+.inputBuscar{
+    flex: 1;
+    max-width: 700px;
+    display: flex;
+}
+
+.inputBuscar input{
+    width: 100%;
+    height: 42px;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+}
+
+.inputBuscar button{
+    width: 50px;
+    border: none;
+    background:#ff8c00;
+    color:white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.inputBuscar button:hover{
+    background:#ffa726;
+}
+
+.iniciarSesion{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.iniciarSesion a{
+    color:white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    transition: .3s;
+}
+
+.iniciarSesion a:hover{
+    color:#ff8c00;
+}
+
+.carrito{
+    position: relative;
+}
+
+.cuentaCarrito{
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background:#ff8c00;
+    color:white;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+nav{
+    border-top:1px solid rgba(255,255,255,.1);
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li a{
+    display: block;
+    padding: 8px 30px;
+    color:white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+nav ul li a:hover{
+    color:#ff8c00;
+}
+
+nav ul li a.activo{
+    color:#ff8c00;
+    font-weight: 600;
+}
+
+
+/*------------------------------------Footer-------------------------------*/
+
+.footer{
+    background:#000;
+    color:#fff;
+    margin-top: 80px;
+    border-top: 3px solid #ff8c00;
+}
+
+.contenedorFooter{
+    max-width: 1400px;
+    margin: auto;
+    padding: 50px 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 40px;
+}
+
+.seccionFooter h3{
+    color:#fff;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.lineaDecorativa{
+    width: 100%;
+    height: 3px;
+    background:#ff8c00;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.seccionFooter p{
+    color:#cfcfcf;
+    line-height: 1.8;
+    font-size: .95rem;
+}
+
+.seccionFooter ul{
+    list-style: none;
+}
+
+.seccionFooter ul li{
+    margin-bottom: 12px;
+}
+
+.seccionFooter ul li a{
+    color:#cfcfcf;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.seccionFooter
+
+ul li a:hover{
+    color:#ff8c00;
+    padding-left: 5px;
+}
+
+.redesSociales{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.redesSociales a{
+    color:#ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: .3s;
+}
+
+.redesSociales a i{
+    width: 25px;
+    font-size: 1.2rem;
+}
+
+.redesSociales a:hover{
+    color:#ff8c00;
+    transform: translateX(5px);
+}
+
+.metodosPago{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.metodosPago i{
+    font-size: 2.8rem;
+    color:#fff;
+    transition: .3s;
+}
+
+.metodosPago i:hover{
+    color:#ff8c00;
+    transform: scale(1.1);
+}
+
+.payment-badge{
+    background:#111;
+    border: 2px solid #ff8c00;
+    color:#fff;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: .9rem;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.payment-badge:hover{
+    background:#ff8c00;
+}
+
+.footerInferior{
+    border-top: 1px solid rgba(255,255,255,.15);
+    padding: 20px;
+    text-align: center;
+}
+
+.footerInferior p{
+    color:#bdbdbd;
+    margin: 6px 0;
+    font-size: .9rem;
+}
+
+.footerInferior i{
+    color:#ff8c00;
+}
+
+/* ------------------ Footer Responsive ------------------------- */
+
+@media(max-width:768px){
+
+    .contenedorFooter{
+        grid-template-columns: 1fr;
+        padding: 40px 25px;
+    }
+
+    .metodosPago{
+        justify-content: center;
+    }
+}
