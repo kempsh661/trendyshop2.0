@@ -717,7 +717,121 @@ nav ul li a.activo{
 .footerInferior i{
     color:#ff8c00;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
+.fila {
+  font-weight: bold;
+}
+.btn-agregar {
+   width:100%;
+    background:#FFA53F;
+    border:none;
+    border-radius:12px;
+    padding:12px;
+    font-weight:600;
+    color:#111;
+}
+
+.seleccion-producto:hover {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-agregar:hover {
+  background-color: #ffc890;
+  transform: translateY(-2px);
+}
+.acomodar {
+  max-height: 300px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+.material-symbols-outlined {
+  font-size: 18px;
+}
+.card {
+  position: relative;
+}
+
+.btn-favorito {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+  z-index: 10;
+}
+
+.btn-favorito .material-symbols-outlined {
+  color: #bdbdbd;
+  font-size: 22px;
+}
+
+.btn-favorito:hover .material-symbols-outlined {
+  color: #ff4d6d;
+}
+
+.catalogo-header{
+    background: linear-gradient(135deg,#111,#1f2937);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.catalogo-header h1{
+    font-size:3rem;
+    font-weight:700;
+}
+
+.catalogo-header p{
+    color:#d1d5db;
+    margin-top:10px;
+}
+.card{
+    border:none;
+    border-radius:16px;
+    overflow:hidden;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+
+
+}
+.card-img-top{
+    height:280px;
+    object-fit:contain;
+    padding:15px;
+}
+.precio{
+    color:#FFA53F;
+    font-size:1.3rem;
+    font-weight:700;
+}
 /* ------------------ Footer Responsive ------------------------- */
 
 @media(max-width:768px){
