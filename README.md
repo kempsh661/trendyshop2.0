@@ -1,8 +1,7 @@
 # trendyshop2.0
 
 Renovacion de la tienda de Trendy 
-
-Integrantes 
+##Integrantes 
 Elimer Rodriguez 
 Daniel Atara
 Daniel Casas
