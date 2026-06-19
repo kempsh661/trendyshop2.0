@@ -1,163 +1,357 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>TrendyShop</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="icon" type="image/png" href="../img/logo.png">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
     <header>
-      <!-- Navbar aqui -->
+
+        <div class="top-header">
+
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/logo.png" alt="TrendyShop">
+                </a>
+            </div>
+
+            <div class="inputBuscar">
+                <input type="text" placeholder="Buscar productos.">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <div class="iniciarSesion">
+
+                <a href="">
+                    <i class="far fa-user"></i>
+                    <span>Iniciar sesión</span>
+                </a>
+
+                <a href="">
+                    <i class="far fa-heart"></i>
+                    <span>Favoritos</span>
+                </a>
+
+                <a href="../carrito/index.html" class="carrito">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Carrito</span>
+                    <span class="cuentaCarrito">0</span>
+                </a>
+
+            </div>
+
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html" class="activo">Inicio</a></li>
+                <li><a href="../catalogo/index.html">Catálogo</a></li>
+                <li><a href="../quienes-somos/index.html">Nosotros</a></li>
+                <li><a href="../contactanos/index.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+
     </header>
-    <!-- hero -->
+
+    <!-- =========================
+         HERO
+    ========================== -->
     <section id="hero" class="container-xl mt-4">
-      <div class="hero-container">
-        <div class="hero-content">
-          <span class="hero-badge"> Nueva Coleccion </span>
-          <h1>
-            Estilo que
-            <span>Te representa</span>
-          </h1>
-          <p>
-            Descubre las ultimas tendencias en ropa, calzado y accesorios para
-            todos los estilos.
-          </p>
-          <div class="hero-buttons">
-            <button class="btn btn-warning">Ver catalogo</button>
-            <button class="btn btn-outline-light">Ofertas Especiales</button>
-          </div>
+
+        <div class="hero-container">
+
+            <div class="hero-content">
+
+                <span class="hero-badge">
+                    Nueva Colección
+                </span>
+
+                <h1>
+                    Estilo que
+                    <span>Te representa</span>
+                </h1>
+
+                <p>
+                    Descubre las últimas tendencias en ropa,
+                    calzado y accesorios para todos los estilos.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="../catalogo/index.html" class="btn btn-warning">
+    Ver catálogo
+</a>
+
+                    <a href="../catalogo/index.html" class="btn btn-outline-light">
+                        Ofertas Especiales
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+                <img src="assets/images/hero/hero.png" alt="Moda">
+            </div>
+
         </div>
-        <div class="hero-image">
-          <img src="/assets/images/hero/hero.png" alt="moda" />
-        </div>
-      </div>
+
     </section>
-    <!-- beneficios -->
+
+    <!-- =========================
+         BENEFICIOS
+    ========================== -->
     <section id="beneficios" class="container-fluid px-5 mt-4">
-      <div class="beneficios-container">
-        <div class="beneficio-item">
-          <i class="bi bi-truck"></i>
-          <div>
-            <h6>Envíos rápidos</h6>
-            <p>Recibe tu pedido en 48 horas</p>
-          </div>
+
+        <div class="beneficios-container">
+
+            <div class="beneficio-item">
+                <i class="bi bi-truck"></i>
+
+                <div>
+                    <h6>Envíos rápidos</h6>
+                    <p>Recibe tu pedido en 48 horas</p>
+                </div>
+            </div>
+
+            <div class="beneficio-item">
+                <i class="bi bi-shield-check"></i>
+
+                <div>
+                    <h6>Compra Segura</h6>
+                    <p>Tus datos siempre protegidos</p>
+                </div>
+            </div>
+
+            <div class="beneficio-item">
+                <i class="bi bi-star"></i>
+
+                <div>
+                    <h6>Calidad garantizada</h6>
+                    <p>Productos 100% originales</p>
+                </div>
+            </div>
+
+            <div class="beneficio-item">
+                <i class="bi bi-headset"></i>
+
+                <div>
+                    <h6>Atención 24/7</h6>
+                    <p>Estamos para ayudarte</p>
+                </div>
+            </div>
+
         </div>
-        <div class="beneficio-item">
-          <i class="bi bi-shield-check"></i>
-          <h6>Compra Segura</h6>
-          <p>Tus datos siempre protegidos</p>
-        </div>
-        <div class="beneficio-item">
-          <i class="bi bi-star"></i>
-          <div>
-            <h6>Calidad garantizada</h6>
-            <p>Productos 100% originales</p>
-          </div>
-        </div>
-        <div class="beneficio-item">
-          <i class="bi bi-headset"></i>
-          <div>
-            <h6>Atención 24/7</h6>
-            <p>Estamos para ayudarte</p>
-          </div>
-        </div>
-      </div>
+
     </section>
-    <!-- categorias -->
+
+    <!-- =========================
+         CATEGORÍAS
+    ========================== -->
     <section id="categorias" class="container-fluid px-5">
-      <div class="section-header">
-        <h2>Categorías</h2>
-        <p>Explora nuestros productos por categoría</p>
-      </div>
 
-      <div class="categorias-grid">
-        <div class="categoria-card">
-          <i class="bi bi-gender-male"></i>
-          <span>Hombre</span>
+        <div class="section-header">
+            <h2>Categorías</h2>
+            <p>Explora nuestros productos por categoría</p>
         </div>
 
-        <div class="categoria-card">
-          <i class="bi bi-gender-female"></i>
-          <span>Mujer</span>
+        <div class="categorias-grid">
+
+            <div class="categoria-card" onclick="irCategoria('hombre')">
+    <i class="bi bi-gender-male"></i>
+    <span>Hombre</span>
+</div>
+
+            <div class="categoria-card" onclick="irCategoria('mujer')">
+    <i class="bi bi-gender-female"></i>
+    <span>Mujer</span>
+</div>
+
+            <div class="categoria-card" onclick="irCategoria('accesorios')">
+                <i class="bi bi-bag"></i>
+                <span>Accesorios</span>
+            </div>
+
+           <div class="categoria-card" onclick="irCategoria('tecnologia')">
+                <i class="bi bi-headphones"></i>
+                <span>Tecnología</span>
+            </div>
+
+            <div class="categoria-card" onclick="irCategoria('hogar')">
+                <i class="bi bi-house"></i>
+                <span>Hogar</span>
+            </div>
+
+            <div class="categoria-card" onclick="irCategoria('ofertas')">
+                <i class="bi bi-tag"></i>
+                <span>Ofertas</span>
+            </div>
+
         </div>
 
-        <div class="categoria-card">
-          <i class="bi bi-bag"></i>
-          <span>Accesorios</span>
-        </div>
-
-        <div class="categoria-card">
-          <i class="bi bi-headphones"></i>
-          <span>Tecnología</span>
-        </div>
-
-        <div class="categoria-card">
-          <i class="bi bi-house"></i>
-          <span>Hogar</span>
-        </div>
-
-        <div class="categoria-card">
-          <i class="bi bi-tag"></i>
-          <span>Ofertas</span>
-        </div>
-      </div>
     </section>
-    <!-- promocion -->
-    <section id="promcion" class="container py-5">
-      <div class="promo-banner">
-        <div class="promo-content">
-          <span class="promo-badge"> OFERTA LIMITADA </span>
 
-          <h2>Hasta 60% OFF</h2>
+    <!-- =========================
+         PROMOCIÓN
+    ========================== -->
+    <section id="promocion" class="container py-5">
 
-          <p>
-            Aprovecha descuentos exclusivos en ropa, accesorios y tecnología.
-          </p>
+        <div class="promo-banner">
 
-          <button class="btn btn-warning">Comprar Ahora</button>
+            <div class="promo-content">
+
+                <span class="promo-badge">
+                    OFERTA LIMITADA
+                </span>
+
+                <h2>Hasta 60% OFF</h2>
+
+                <p>
+                    Aprovecha descuentos exclusivos en ropa,
+                    accesorios y tecnología.
+                </p>
+
+                <button class="btn btn-warning">
+                    Comprar Ahora
+                </button>
+
+            </div>
+
         </div>
-      </div>
+
     </section>
-    <!-- newslestter -->
-    <section id="newslestt" class="container py-5">
-      <div class="newsletter-container">
-        <div class="newsletter-content">
-          <span class="newsletter-badge"> NEWSLETTER </span>
 
-          <h2>Mantente al día con nuestras ofertas</h2>
+    <!-- =========================
+         NEWSLETTER
+    ========================== -->
+    <section id="newsletter" class="container py-5">
 
-          <p>
-            Suscríbete y recibe descuentos exclusivos, novedades y promociones
-            especiales.
-          </p>
+        <div class="newsletter-container">
+
+            <div class="newsletter-content">
+
+                <span class="newsletter-badge">
+                    NEWSLETTER
+                </span>
+
+                <h2>
+                    Mantente al día con nuestras ofertas
+                </h2>
+
+                <p>
+                    Suscríbete y recibe descuentos exclusivos,
+                    novedades y promociones especiales.
+                </p>
+
+            </div>
+
+            <form class="newsletter-form">
+
+                <input
+                    type="email"
+                    placeholder="Ingresa tu correo electrónico"
+                    required>
+
+                <button type="submit" class="btn btn-warning">
+                    Suscribirme
+                </button>
+
+            </form>
+
         </div>
 
-        <form class="newsletter-form">
-          <input
-            type="email"
-            placeholder="Ingresa tu correo electrónico"
-            required
-          />
-
-          <button type="submit" class="btn btn-warning">Suscribirme</button>
-        </form>
-      </div>
     </section>
     <!-- footer -->
-    <footer></footer>
+    <footer class="footer">
+        <div class="contenedorFooter">
+            <div class="seccionFooter">
+                <h3>Redes Sociales</h3>
+
+                <div class="lineaDecorativa"></div>
+
+                <div class="redesSociales">
+                    <a href=""><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href=""><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href=""><i class="fab fa-x-twitter"></i> X</a>
+                    <a href=""><i class="fab fa-youtube"></i> YouTube</a>
+                    <a href=""><i class="fab fa-tiktok"></i> TikTok</a>
+                </div>
+            </div>
+
+            <div class="seccionFooter">
+                <h3>Métodos de Pago</h3>
+
+                <div class="lineaDecorativa"></div>
+
+                <div class="metodosPago">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <div class="payment-badge">PSE</div>
+                </div>
+            </div>
+
+            <div class="seccionFooter">
+                <h3>Atención al Cliente</h3>
+
+                <div class="lineaDecorativa"></div>
+
+                <ul>
+                    <li><a href="">Preguntas Frecuentes</a></li>
+                    <li><a href="">Cambios y Devoluciones</a></li>
+                    <li><a href="">Términos y Condiciones</a></li>
+                    <li><a href="">Política de Privacidad</a></li>
+                </ul>
+            </div>
+
+            <div class="seccionFooter">
+                <h3>TrendyShop</h3>
+                <div class="lineaDecorativa"></div>
+                <p>
+                    Tu tienda online de moda y accesorios.
+                    Compras seguras, envíos rápidos y las mejores ofertas para toda Colombia.
+                </p>
+            </div>
+        </div>
+
+        <div class="footerInferior">
+            <p>
+                © 2026 TrendyShop. Todos los derechos reservados.
+            </p>
+
+            <p>
+                Diseñado con <i class="fas fa-heart"></i> para nuestros clientes.
+            </p>
+        </div>
+
+    </footer>
+    <script src="js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
