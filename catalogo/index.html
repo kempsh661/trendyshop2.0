@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="es">
+  <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trendy Shop - Catálogo</title>
@@ -10,128 +10,379 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="icon" type="image/png" href="../img/logo.png">
-</head>
+  </head>
 
-<body>
+  <body>
     <!------------------------------ NavBar ------------------------------>
     <header>
-        <div class="top-header">
-
-            <div class="logo">
-                <a href="../index.html">
-                    <img src="../img/logo.png" alt="TrendyShop">
-                </a>
-            </div>
-
-            <div class="inputBuscar">
-                <input type="text" placeholder="Buscar productos.">
-                <button>
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
-
-            <div class="iniciarSesion">
-                <a href="">
-                    <i class="far fa-user"></i>
-                    <span>Iniciar sesión</span>
-                </a>
-
-                <a href="">
-                    <i class="far fa-heart"></i>
-                    <span>Favoritos</span>
-                </a>
-
-                <a href="../carrito/index.html" class="carrito">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span>Carrito</span>
-                    <span class="cuentaCarrito">0</span>
-                </a>
-            </div>
-
+      <div class="top-header">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="../img/logo.png" alt="TrendyShop" />
+          </a>
         </div>
 
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../catalogo/index.html" class="activo">Catálogo</a></li>
-                <li><a href="../quienes-somos/index.html">Nosotros</a></li>
-                <li><a href="../contactanos/index.html">Contáctanos</a></li>
-            </ul>
-        </nav>
+        <div class="inputBuscar">
+          <input type="text" placeholder="Buscar productos." />
+          <button>
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+
+        <div class="iniciarSesion">
+          <a href="">
+            <i class="far fa-user"></i>
+            <span>Iniciar sesión</span>
+          </a>
+
+          <a href="">
+            <i class="far fa-heart"></i>
+            <span>Favoritos</span>
+          </a>
+
+          <a href="../carrito/index.html" class="carrito">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Carrito</span>
+            <span class="cuentaCarrito">0</span>
+          </a>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../catalogo/index.html" class="activo">Catálogo</a></li>
+          <li><a href="../quienes-somos/index.html">Nosotros</a></li>
+          <li><a href="../contactanos/index.html">Contáctanos</a></li>
+        </ul>
+      </nav>
     </header>
     <!-------------------------------------------------------------------->
 
+    <div class="fila">
+      <div class="container my-5">
+        <div class="row g-4">
+          <!-- Producto 1 -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card h-100">
+              <button class="btn-favorito">
+                <span class="material-symbols-outlined"> favorite </span>
+              </button>
+              <img src="./imgs/buso.png" class="card-img-top seleccion-producto seleccion-producto"
+                alt="Producto 1: Chaqueta" />
+              <div class="card-body">
+                <p id="nombre_producto1" class="card-text">
+                  Buso oversize negro
+                </p>
+                <p id="precio_producto1" class="card-text">$99.999</p>
+                <p class="card-text">⭐⭐⭐⭐⭐</p>
+                <button class="btn-agregar">
+                  <span class="material-symbols-outlined">shopping_cart</span>
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
 
+          <!-- Producto 2 -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card h-100">
+              <button class="btn-favorito">
+                <span class="material-symbols-outlined"> favorite </span>
+              </button>
+              <img src="./imgs/zapatillas.png" class="card-img-top seleccion-producto" alt="Producto 2: zapatillas" />
+              <div class="card-body">
+                <p id="nombre_producto2" class="card-text">Zapatillas Adidas</p>
+                <p id="precio_producto2" class="card-text">$189.999</p>
+                <p class="card-text">⭐⭐⭐⭐</p>
+                <button class="btn-agregar">
+                  <span class="material-symbols-outlined">shopping_cart</span>
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
 
+          <!-- Producto 3 -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card h-100">
+              <button class="btn-favorito">
+                <span class="material-symbols-outlined"> favorite </span>
+              </button>
+              <img src="./imgs/reloj.png" class="card-img-top seleccion-producto acomodar" alt="Producto 3:Reloj" />
+              <div class="card-body">
+                <p id="nombre_producto3" class="card-text">
+                  Reloj Mido Automatic
+                </p>
+                <p id="precio_producto3" class="card-text">$329.999</p>
+                <p class="card-text">⭐⭐⭐⭐</p>
+                <button class="btn-agregar">
+                  <span class="material-symbols-outlined">shopping_cart</span>
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
 
+          <!-- Producto 4 -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card h-100">
+              <button class="btn-favorito">
+                <span class="material-symbols-outlined"> favorite </span>
+              </button>
+              <img src="./imgs/maleta.png" class="card-img-top seleccion-producto" alt="Producto 4:Maleta" />
+              <div class="card-body">
+                <p id="nombre_producto4" class="card-text">
+                  Maleta minimalista negra
+                </p>
+                <p id="precio_producto4" class="card-text">$249.999</p>
+                <p class="card-text">⭐⭐⭐⭐⭐</p>
+                <button class="btn-agregar">
+                  <span class="material-symbols-outlined">shopping_cart</span>
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
 
+          <!-- Producto 5 -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card h-100">
+              <button class="btn-favorito">
+                <span class="material-symbols-outlined"> favorite </span>
+              </button>
+              <img src="./imgs/gorra.png" class="card-img-top seleccion-producto" alt="Producto 5: Gorra" />
+              <div class="card-body">
+                <p id="nombre_producto5" class="card-text">
+                  Gorra Deportiva Nike
+                </p>
+                <p id="precio_producto5" class="card-text">$89.999</p>
+                <p class="card-text">⭐⭐⭐⭐</p>
+                <button class="btn-agregar">
+                  <span class="material-symbols-outlined">shopping_cart</span>
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 6 -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card h-100">
+              <button class="btn-favorito">
+                <span class="material-symbols-outlined"> favorite </span>
+              </button>
+              <img src="./imgs/camiseta.png" class="card-img-top seleccion-producto" alt="Producto 6: camiseta polo" />
+              <div class="card-body">
+                <p id="nombre_producto6" class="card-text">
+                  Camiseta Blanca Tipo Polo
+                </p>
+                <p id="precio_producto6" class="card-text">$89.999</p>
+                <p class="card-text">⭐⭐⭐⭐⭐</p>
+                <button class="btn-agregar">
+                  <span class="material-symbols-outlined">shopping_cart</span>
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 7 -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card h-100">
+              <button class="btn-favorito">
+                <span class="material-symbols-outlined"> favorite </span>
+              </button>
+              <img src="./imgs/zapatillas2.png" class="card-img-top seleccion-producto"
+                alt="Producto 7: zapatillas deportivas" />
+              <div class="card-body">
+                <p id="nombre_producto7" class="card-text">
+                  Zapatillas Deportivas Negras
+                </p>
+                <p id="precio_producto7" class="card-text">$359.999</p>
+                <p class="card-text">⭐⭐⭐⭐⭐</p>
+                <button class="btn-agregar">
+                  <span class="material-symbols-outlined">shopping_cart</span>
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 8 -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card h-100">
+              <button class="btn-favorito">
+                <span class="material-symbols-outlined"> favorite </span>
+              </button>
+              <button class="btn-favorito">
+                <span class="material-symbols-outlined"> favorite </span>
+              </button>
+              <img src="./imgs/Audifonos.png" class="card-img-top seleccion-producto" alt="Producto 8: Audífonos" />
+              <div class="card-body">
+                <p id="nombre_producto8" class="card-text">Audifonos Gamer</p>
+                <p id="precio_producto8" class="card-text">$149.999</p>
+                <p class="card-text">⭐⭐⭐⭐</p>
+                <button class="btn-agregar">
+                  <span class="material-symbols-outlined">shopping_cart</span>
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card h-100">
+              <button class="btn-favorito">
+                <span class="material-symbols-outlined"> favorite </span>
+              </button>
+
+              <img src="./imgs/Chaqueta.png" class="card-img-top seleccion-producto acomodar"
+                alt="Producto 9: Chaqueta" />
+              <div class="card-body">
+                <p id="nombre_producto9" class="card-text">Chaqueta En Cuero</p>
+                <p id="precio_producto9" class="card-text">$429.999</p>
+                <p class="card-text">⭐⭐⭐⭐</p>
+                <button class="btn-agregar">
+                  <span class="material-symbols-outlined">shopping_cart</span>
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Producto 10 -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card h-100">
+              <button class="btn-favorito">
+                <span class="material-symbols-outlined"> favorite </span>
+              </button>
+              <img src="./imgs/maleta2.png" class="card-img-top seleccion-producto acomodar"
+                alt="Producto 10: maleta deportiva" />
+              <div class="card-body">
+                <p id="nombre_producto10" class="card-text">
+                  Maleta para ordenador blanca
+                </p>
+                <p id="precio_producto10" class="card-text">$209.999</p>
+                <p class="card-text">⭐⭐⭐⭐⭐</p>
+                <button class="btn-agregar">
+                  <span class="material-symbols-outlined">shopping_cart</span>
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 11 -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card h-100">
+              <button class="btn-favorito">
+                <span class="material-symbols-outlined"> favorite </span>
+              </button>
+              <img src="./imgs/Chaqueta2.png" class="card-img-top seleccion-producto" alt="Producto 11: Hoodie Nike" />
+              <div class="card-body">
+                <p id="nombre_producto11" class="card-text">
+                  Chaqueta Rompevientos Nike
+                </p>
+                <p id="precio_producto11" class="card-text">$159.999</p>
+                <p class="card-text">⭐⭐⭐⭐⭐</p>
+                <button class="btn-agregar">
+                  <span class="material-symbols-outlined">shopping_cart</span>
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 12 -->
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card h-100">
+              <button class="btn-favorito">
+                <span class="material-symbols-outlined"> favorite </span>
+              </button>
+              <img src="./imgs/maleta3.png" class="card-img-top seleccion-producto acomodar"
+                alt="Producto 12: mochila" />
+              <div class="card-body">
+                <p id="nombre_producto12" class="card-text">
+                  Mochila y bolso femenino
+                </p>
+                <p id="precio_producto12" class="card-text">$199.999</p>
+                <p class="card-text">⭐⭐⭐⭐⭐</p>
+                <button class="btn-agregar">
+                  <span class="material-symbols-outlined">shopping_cart</span>
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!------------------------------ Footer ------------------------------>
     <footer class="footer">
-        <div class="contenedorFooter">
-            <div class="seccionFooter">
-                <h3>Redes Sociales</h3>
+      <div class="contenedorFooter">
+        <div class="seccionFooter">
+          <h3>Redes Sociales</h3>
 
-                <div class="lineaDecorativa"></div>
+          <div class="lineaDecorativa"></div>
 
-                <div class="redesSociales">
-                    <a href=""><i class="fab fa-instagram"></i> Instagram</a>
-                    <a href=""><i class="fab fa-facebook-f"></i> Facebook</a>
-                    <a href=""><i class="fab fa-x-twitter"></i> X</a>
-                    <a href=""><i class="fab fa-youtube"></i> YouTube</a>
-                    <a href=""><i class="fab fa-tiktok"></i> TikTok</a>
-                </div>
-            </div>
-
-            <div class="seccionFooter">
-                <h3>Métodos de Pago</h3>
-
-                <div class="lineaDecorativa"></div>
-
-                <div class="metodosPago">
-                    <i class="fab fa-cc-visa"></i>
-                    <i class="fab fa-cc-mastercard"></i>
-                    <i class="fab fa-cc-paypal"></i>
-                    <div class="payment-badge">PSE</div>
-                </div>
-            </div>
-
-            <div class="seccionFooter">
-                <h3>Atención al Cliente</h3>
-
-                <div class="lineaDecorativa"></div>
-
-                <ul>
-                    <li><a href="">Preguntas Frecuentes</a></li>
-                    <li><a href="">Cambios y Devoluciones</a></li>
-                    <li><a href="">Términos y Condiciones</a></li>
-                    <li><a href="">Política de Privacidad</a></li>
-                </ul>
-            </div>
-
-            <div class="seccionFooter">
-                <h3>TrendyShop</h3>
-                <div class="lineaDecorativa"></div>
-                <p>
-                    Tu tienda online de moda y accesorios.
-                    Compras seguras, envíos rápidos y las mejores ofertas para toda Colombia.
-                </p>
-            </div>
+          <div class="redesSociales">
+            <a href=""><i class="fab fa-instagram"></i> Instagram</a>
+            <a href=""><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href=""><i class="fab fa-x-twitter"></i> X</a>
+            <a href=""><i class="fab fa-youtube"></i> YouTube</a>
+            <a href=""><i class="fab fa-tiktok"></i> TikTok</a>
+          </div>
         </div>
 
-        <div class="footerInferior">
-            <p>
-                © 2026 TrendyShop. Todos los derechos reservados.
-            </p>
+        <div class="seccionFooter">
+          <h3>Métodos de Pago</h3>
 
-            <p>
-                Diseñado con <i class="fas fa-heart"></i> para nuestros clientes.
-            </p>
+          <div class="lineaDecorativa"></div>
+
+          <div class="metodosPago">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-paypal"></i>
+            <div class="PSE">PSE</div>
+          </div>
         </div>
 
+        <div class="seccionFooter">
+          <h3>Atención al Cliente</h3>
+
+          <div class="lineaDecorativa"></div>
+
+          <ul>
+            <li><a href="">Preguntas Frecuentes</a></li>
+            <li><a href="">Cambios y Devoluciones</a></li>
+            <li><a href="">Términos y Condiciones</a></li>
+            <li><a href="">Política de Privacidad</a></li>
+          </ul>
+        </div>
+
+        <div class="seccionFooter">
+          <h3>TrendyShop</h3>
+          <div class="lineaDecorativa"></div>
+          <p>
+            Tu tienda online de moda y accesorios. Compras seguras, envíos
+            rápidos y las mejores ofertas para toda Colombia.
+          </p>
+        </div>
+      </div>
+
+      <div class="footerInferior">
+        <p>© 2026 TrendyShop. Todos los derechos reservados.</p>
+
+        <p>Diseñado con <i class="fas fa-heart"></i> para nuestros clientes.</p>
+      </div>
     </footer>
-</body>
+  </body>
 
-</html>
+  </html>
