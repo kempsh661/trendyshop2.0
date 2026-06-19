@@ -510,9 +510,6 @@ body {
     padding: 40px 32px;
     margin: 20px;
 
-
-
-
 }
 
 .section-alt {
@@ -729,4 +726,27 @@ body {
 
 .btn-out:hover {
     background: rgba(245, 166, 35, 0.1);
+}
+
+.texto-color{
+    color: #FFA53F;
+}
+
+.fondo-color-card{
+    background-color: #BDBDBD;
+}
+
+.btn-color{
+    background-color: #FFA53F;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-color:hover{
+    background-color: #E07B00;
+    color: #fff;
+    transform: translateY(-1px);
+}
+.form-control:focus, .form-select:focus {
+    border-color: #FFA53F !important;
+    box-shadow: 0 0 0 0.25rem rgba(255, 140, 0, 0.15) !important;
 }
