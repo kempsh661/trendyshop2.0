@@ -1,16 +1,23 @@
-TrendyShop 2.0
-Descripción
+# TrendyShop 2.0
 
-Renovación y modernización de la tienda TrendyShop, enfocada en mejorar la experiencia de usuario, el diseño visual y las funcionalidades de la plataforma.
+## 🛍️ Descripción
+Renovación y modernización de la tienda TrendyShop.
 
-Integrantes
-Elimer Rodríguez
-Daniel Atara
-Daniel Casas
-Lina Gallardo
-Stefany López
-Objetivo del Proyecto
+## 👥 Integrantes
+- Elimer Rodríguez
+- Daniel Atara
+- Daniel Casas
+- Lina Gallardo
+- Stefany López
 
-Desarrollar una nueva versión de TrendyShop con una interfaz moderna, intuitiva y responsive, incorporando mejoras en navegación, catálogo de productos, proceso de compra y experiencia general del usuario.
+## 🎯 Objetivo
+Desarrollar una plataforma de comercio electrónico moderna, atractiva y responsive que mejore la experiencia de compra de los usuarios.
 
-Proyecto Académico - TrendyShop 2.0
+## 🛠️ Tecnologías
+- HTML5
+- CSS3
+- Bootstrap 5
+- JavaScript
+
+## 📌 Estado del Proyecto
+🚧 En desarrollo
