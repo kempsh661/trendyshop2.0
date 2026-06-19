@@ -1,0 +1,459 @@
+/* VARIABLES GLOBALES */
+
+:root {
+    --primary: #111111;
+    --accent: #FFA53F;
+    --background: #F8F9FA;
+    --white: #FFFFFF;
+    --text: #333333;
+    --border: #E5E7EB;
+}
+
+/* ESTILOS GENERALES*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+section {
+    padding: 80px 0;
+}
+
+/*HOME - HERO SECTION*/
+
+#hero {
+    padding: 40px 0;
+}
+
+.hero-container {
+    background: #111;
+    border-radius: 20px;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 50px 60px;
+    gap: 40px;
+}
+
+/* Contenido del Hero */
+.hero-content {
+    flex: 1;
+    max-width: 420px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Badge superior */
+.hero-badge {
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Título principal */
+.hero-content h1 {
+    font-size: 3.8rem;
+    font-weight: 800;
+    line-height: 1;
+    margin: 20px 0;
+}
+
+.hero-content span {
+    color: var(--accent);
+}
+
+/* Texto descriptivo */
+.hero-content p {
+    color: #d1d5db;
+    max-width: 500px;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* Botones del Hero */
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 12px;
+}
+
+/* Imagen principal */
+.hero-image {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+/*HOME - BENEFICIOS */
+
+#beneficios {
+    padding: 20px 0 40px;
+}
+
+.beneficios-container {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: hidden;
+}
+
+.beneficio-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    min-width: 0;
+    border-right: 1px solid var(--border);
+}
+
+.beneficio-item div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.beneficio-item:last-child {
+    border-right: none;
+}
+
+.beneficio-item i {
+    font-size: 2.2rem;
+    color: var(--accent);
+}
+
+.beneficio-item h6 {
+    margin: 0;
+    font-weight: 600;
+    font-size: .95rem;
+    margin-bottom: 2px;
+    line-height: 1.2;
+}
+
+.beneficio-item p {
+    margin: 0;
+    font-size: .85rem;
+    color: #6b7280;
+}
+
+/* HOME - CATEGORÍAS */
+
+#categorias {
+    padding: 20px 0 40px;
+}
+
+/* Encabezado de sección */
+.section-header {
+    margin-bottom: 20px;
+}
+
+.section-header h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.section-header p {
+    color: #6b7280;
+    margin-top: 5px;
+}
+
+/* Grid de categorías */
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+}
+
+/* Tarjeta de categoría */
+.categoria-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 15px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.categoria-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .08);
+}
+
+.categoria-card i {
+    font-size: 1.8rem;
+    color: var(--accent);
+}
+
+.categoria-card span {
+    font-weight: 500;
+}
+
+/* HOME - BANNER PROMOCIONAL*/
+
+.promo-banner {
+    background: linear-gradient(135deg,
+            #111111,
+            #1f2937);
+    border-radius: 20px;
+    padding: 80px 40px;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.promo-badge {
+    display: inline-block;
+    background: rgba(255, 165, 63, .15);
+    color: var(--accent);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: .85rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.promo-banner h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.promo-banner p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #d1d5db;
+}
+
+/* HOME - NEWSLETTER */
+
+.newsletter-container {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.newsletter-badge {
+    display: inline-block;
+    background: rgba(255, 165, 63, .15);
+    color: var(--accent);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: .85rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.newsletter-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+.newsletter-content p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #6b7280;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 15px 20px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    outline: none;
+}
+
+.newsletter-form input:focus {
+    border-color: var(--accent);
+}
+
+.newsletter-form button {
+    padding: 15px 25px;
+}
+
+/* HOME - RESPONSIVE TABLET */
+
+@media (max-width:992px) {
+
+    .hero-container {
+        padding: 40px;
+        gap: 30px;
+    }
+
+    .hero-content {
+        max-width: 350px;
+    }
+
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-image img {
+        height: 350px;
+    }
+
+    .beneficios-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .beneficio-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .categorias-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+/* HOME - RESPONSIVE MÓVIL */
+
+@media (max-width:768px) {
+
+
+    #hero {
+        padding: 20px 0;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .hero-content {
+        flex: none;
+        width: 100%;
+    }
+
+    .hero-content p {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        flex: none;
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        min-height: auto;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .beneficios-container {
+        grid-template-columns: 1fr;
+    }
+
+    .beneficio-item {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .beneficio-item:last-child {
+        border-bottom: none;
+    }
+
+    .categorias-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .promo-banner {
+        padding: 50px 25px;
+    }
+
+    .promo-banner h2 {
+        font-size: 2rem;
+    }
+
+    .newsletter-content h2 {
+        font-size: 2rem;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
+
+
+}
+
+/*HOME - RESPONSIVE TELÉFONOS PEQUEÑOS */
+
+@media (max-width:480px) {
+
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: .95rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+
+}
